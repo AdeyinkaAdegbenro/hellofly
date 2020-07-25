@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/sh -l
 
 # install flyctl
-curl -L https://fly.io/install.sh | FLYCTL_INSTALL=/usr/local sh
+curl -L https://fly.io/install.sh | sh
 
 # deploy app
 sh -c "flyctl deploy"
