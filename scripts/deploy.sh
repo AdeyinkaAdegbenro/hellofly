@@ -3,6 +3,12 @@
 # install flyctl
 curl -L https://fly.io/install.sh | sh
 
+export FLYCTL_INSTALL="/home/travis/.fly"
+
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+echo "Successfully Installed Flyctl"
+
 # deploy app
 sh -c "flyctl deploy"
 
